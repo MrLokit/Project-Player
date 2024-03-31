@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Стрела</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <h1>Стрела/ хотел добавить серии как скачаются</h1>
+        <h2>2012</h2>
+    </header>
+    
+    <main>
+        <div class="settings"> <!-- Settings -->
+            <div class="dark_theme">
+                <span>Тёмная тема</span>
+                <label class="switch">
+                    <input type="checkbox" id="theme_toggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Video -->
+        <div class="video-player">
+            <div class="season-selection">
+                <select id="season-dropdown">
+                    <option value="season1">Сезон 1</option>
+                    <option value="season2">Сезон 2</option>
+                    <!-- Добавьте остальные сезоны по мере необходимости -->
+                </select>
+                <select id="episode-dropdown"></select>
+                <select id="voiceover">
+                    <option value="voice1">Озвучка 1</option>
+                    <option value="voice2">Озвучка 2</option>
+                    <!-- Добавьте остальные опции для озвучки по мере необходимости -->
+                </select>
+            </div>
+            <video src='../videos/arrow/lostfilm/s1/Arrow.S01E01.720p.WEB.rus.LostFilm.TV.mp4' class="video" controls></video>
+        </div>           
+
+        <!-- Comments -->
+        <div class="comment-section">
+            <h3>Комментарии</h3>
+            <textarea id="commentInput" placeholder="Напишите ваш комментарий"></textarea>
+            <button onclick="addComment()">Добавить комментарий</button>
+            <div id="comments"></div>
+        </div>
+    </main>
+    
+    <footer>
+        <a href="">Правообладателям</a>
+    </footer>
+    
+    <script src="../js/player.js"></script>
+</body>
+</html>
